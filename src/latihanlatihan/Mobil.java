@@ -26,7 +26,7 @@ public class Mobil extends Kendaraan implements Fungsionalitas{
     
     @Override
     public int getRoda() {
-       return jumlahRoda;
+       return this.jumlahRoda;
     }
     
     public String getRoda(int roda){
@@ -49,7 +49,7 @@ public class Mobil extends Kendaraan implements Fungsionalitas{
 
     @Override
     public void setJenis(String jenis) {
-        this.jenis = jenis;
+        jenis = this.jenis ;
     }
 
     @Override

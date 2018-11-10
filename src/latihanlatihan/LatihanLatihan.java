@@ -19,17 +19,29 @@ public class LatihanLatihan {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Mobil mobil = new Mobil();
-        mobil.nama = "Avanza";
-        
+        Mobil mobil = new Mobil();        
         Scanner input = new Scanner(System.in);
         
-        System.out.print("masukkan jumlah Roda :");
+        System.out.prit("masukkan jumlah Roda : ");
         int number = input.nextInt();
+
+        System.out.print("masukkan nama mobil : ");
+        String namaMobil = input.next();
+        mobil.nama = Namamobil;
+        System.out.print("masukkan jenis mobil : ");
+        String jenisMobil = input.next();
+        mobil.setJenis(jenisMobil);
         
-        System.out.println("mobil "+mobil.nama+
-                           "\nmemiliki roda "+number+
+        System.out.println(
+                           "\n\n=========data output=========="+
+                           "\nmobil = "+mobil.nama+
+                           "\njenis mobil = "+mobil.getJenis()+
+                           "\nmemiliki roda = "+mobil.getRoda()+
                            "\n"+mobil.getRoda(number));
+        
+        //uncomment
+//        Motor motor = new Motor();
+//        motor.Fungtion();
     }
     
 }

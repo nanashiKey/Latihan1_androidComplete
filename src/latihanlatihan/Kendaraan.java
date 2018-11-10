@@ -27,6 +27,6 @@ public class Kendaraan {
     }
     
     public int getRoda(){
-        return jumlahRoda;
+        return jenis;
     }
 }
